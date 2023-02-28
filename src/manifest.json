@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "FlipShope - Price Tracker Extension",
+  "icons": {
+    "128": "icon-128.png"
+  },
+
+  "description": "Automatically find and apply coupon codes in one click, Get features like Auto buy, Price Graph, Compare and much more",
+
+  "background": { "service_worker": "background.bundle.js" },
+  "action": {
+    "default_icon": "icon-34.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_end",
+      "match_about_blank": false,
+      "all_frames": false,
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
+  ],
+  "homepage_url": "https://flipshope.com",
+  "permissions": [
+    "notifications",
+    "tabs",
+    "cookies",
+    "gcm",
+    "storage",
+    "unlimitedStorage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": ["*://*/*"],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "icon-128.png",
+        "icon-34.png",
+        "/assets/*"
+      ],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "short_name": "Flipshope"
+}

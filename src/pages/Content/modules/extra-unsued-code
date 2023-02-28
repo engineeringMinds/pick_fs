@@ -1,0 +1,183 @@
+// rendering_func
+
+function render_my_temp(params) {
+  console.log('render my temp params', params);
+  glb_str_det_var = params;
+  let grabbable = document.querySelector('#fs_div_all').shadowRoot;
+  let extPopup = grabbable.querySelector('.extOtherPopups');
+  let extMain = grabbable.querySelector('.mainExtSubCont');
+  console.log('extMain', extMain, 'extPopup', extPopup);
+
+  switch (params.type) {
+    case 'all_stores':
+      !global_all_stores_data &&
+        sendMessagePromise({ dataMSg: { msg: 'fetch_all_stores', data: '' } })
+          .then((result) => {
+            console.log('this is result', result);
+            // global_all_stores_data = result;
+          })
+          .catch((error) => console.log('this is error', error));
+      break;
+    case 'add_store_popup':
+      brwsr_act.type = 'add_store_popup';
+      break;
+    case 'whish_list':
+      if (rend_side_pop) return;
+      if (document.querySelector('.side_popup_cont'))
+        document.querySelector('.side_popup_cont').remove();
+      let mySidePopup = document.createElement('div');
+      mySidePopup.setAttribute('class', 'side_popup_cont');
+      mySidePopup.innerHTML = `${sidePopup('wish_list_page')}`;
+      extPopup.appendChild(mySidePopup);
+      rend_side_pop = 1;
+      brwsr_act.type = 'whish_list';
+      break;
+    case 'Price_alert_page':
+      (async function callMe() {
+        // making side popup and setting display none...........
+
+        makSidePop('Price_alert_page', false);
+
+        // making side popup and setting display none...........
+
+        let chck_prd_wl_res = await chck_prd_in_whishlist(); //checking prdct in wish list...
+
+        let myCanva = document.createElement('canvas');
+        myCanva.setAttribute('id', 'myCanva');
+        extMain.innerHTML = `${ext_main_temp_struc(
+          '',
+          'Save Product',
+          params.data,
+          main_ext_id,
+          false,
+          params.data.is_flash,
+          false,
+          1
+        )}`;
+        // extMain.innerHTML = `${ext_main_temp_struc('','Save Product',params.data,main_ext_id,false,true,false,1)}`;
+        check_header('Save Product', false, 'whs_lst');
+        console.log(
+          'dvjjdbnvdjkbvdj.....',
+          extMain.querySelector('.contentBlock')
+        );
+        extMain.querySelector('.contentBlock').innerHTML = `${save_prod_pg_temp(
+          main_ext_id,
+          chck_prd_wl_res
+        )}`;
+        extMain.querySelector('.my_canva_grph_cont').appendChild(myCanva);
+        // ****************** data options ************************
+        console.log('params pricce grah.....', params.data.grph_data);
+        let data = [];
+        if (params.data.grph_data) {
+          data = graph_manipulator(params.data.grph_data.data);
+        }
+        const labels = data.map((y) => y[0]);
+
+        // ****************** data options ************************
+
+        let dataOpt = {
+            labels: labels,
+            datasets: [
+              {
+                steppedLine: true,
+                label: 'Max Price',
+                data: data.map((d) => d[1]),
+                borderWidth: 1,
+                pointRadius: 1,
+                backgroundColor: '#ffe0b2',
+                backgroundColor: '#0c579659',
+                borderColor: '#0c5796', // "rgb(96, 125, 139)",
+                fill: 1,
+                stepped: 'middle',
+              },
+              {
+                label: 'Min Price',
+                stepped: 'middle',
+                data: data.map((data) => data[2]),
+                borderWidth: 1,
+                pointRadius: 1,
+                backgroundColor: 'transparent',
+                // backgroundColor: "#0c579659",
+                // borderColor:'#fb8c00'// 'blue'
+                borderColor: '#0c5796',
+                fill: false,
+              },
+            ],
+          },
+          dispOpt = {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              tooltip: {
+                mode: 'index',
+                intersect: false,
+                titleSpacing: 80,
+                titleMarginBottom: 10,
+                xPadding: 10,
+                yPadding: 10,
+                bodyFontFamily: 'rubik, sans-serif',
+                bodySpacing: 7,
+                backgroundColor: '#0c5796',
+                bodyFontColor: 'white',
+                titleFontColor: 'white',
+              },
+            },
+
+            scales: {
+              x: {
+                type: 'time',
+                time: {
+                  minUnit: 'day',
+                  tooltipFormat: 'DD-MMM-YY',
+                },
+                ticks: {
+                  maxTicksLimit: 14,
+                  maxRotation: 0,
+                },
+              },
+              y: {
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function (value, index, values) {
+                    return 'Rs.' + value;
+                  },
+                  stepSize: 1,
+                  maxTicksLimit: 8,
+                },
+              },
+            },
+          };
+
+        new Chart(myCanva, {
+          type: 'line',
+          data: dataOpt,
+          options: dispOpt,
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+            titleSpacing: 80,
+            titleMarginBottom: 10,
+            xPadding: 10,
+            yPadding: 10,
+            bodyFontFamily: 'rubik, sans-serif',
+            bodySpacing: 7,
+            backgroundColor: '#0c5796',
+            bodyFontColor: 'white',
+            titleFontColor: 'white  ',
+          },
+        });
+        brwsr_act.type = 'Price_alert_page';
+        brwsr_act.isOpen = true;
+      })();
+
+      break;
+    case 'auto_apply_popup':
+      brwsr_act.type = 'auto_apply_popup';
+      break;
+
+    default:
+      '';
+  }
+}

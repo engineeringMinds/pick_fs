@@ -1,0 +1,697 @@
+{
+  "rec_used_coup": [
+    {
+      "brand_img": "data:image/png;base64,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",
+      "coupon_code": "AMAZN20",
+      "time_stamp": "1664524355898",
+      "store_url": "https://www.amazon.in/"
+    },
+    {
+      "brand_img": "data:image/png;base64,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",
+      "coupon_code": "FILPK20",
+      "time_stamp": "1664525099153",
+      "store_url": "https://www.flipkart.com/"
+    },
+    {
+      "brand_img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAw1BMVEX///8AAAD/mQA2NjZTU1Pg4ODZ2dn7+/v4+Pjx8fH/mACQkJBubm5YWFhISEj/kgA9PT2ioqLn5+eJiYl5eXn/kADT09PIyMgoKCjMzMwRERGbm5siIiJdXV1+fn7/lQALCwu8vLxmZmarq6txcXE7Ozv+9ucdHR2pqam3t7dERET+umj+wHX+2qz/1J/+nBz+5cL+pzj+7tj+zJH/oi3//PP+rkz+xoEvLy/+7ND/+uz+tl3+3rX/xHz+tFT+qT/+y4t9mO3PAAAJNUlEQVR4nO2aeVfqPBCHy94FKRTKDmVRFFmKVUTEq37/T/WmSyZpWrgK7Xn1nnn+8ZA06eSXyWSSKkkIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgvwiSoVWTRsOtWnHOPWY0Wx1ijL7LRc6rWZ8C6Mz7dWH9dq4UDrDHqXYIW9STj7jGXP6kW9Q0O4zlO5gzhtdHDZc6u67xlcj94mbWqCColX9FmOxQ3k66EKP1V5IpemkHAPfhTK9uvVatifhnpueLQ3NNbAz8IxpD09O2ldRrjNhXlqsMh+U9aRSGR64KbhVYzbMSng6al2hR43Jqoh1Pjk5vnWbV6EdFJKyOntkerkEnVHUol6MBhNeJSL+Hd+gz4mgDKId5qHe6MdqcE81kPNCzZCpkwMNhvwTd5dK0Io1aS5qUJuG6idSMdxgADOtiIPw67+ogVKJVE1ABKpBax56oNu8TIJCvEldOm90QPVq+IGWONngs43YDsFjT2sgx/hQpiFqMBaEur5MAy4WdPl1WBM0aGfCvIiGUjvGrGjU5ZZZlWpwe0qDXmwl1Y9qUBaWb/+iuNiEfq7mxcKYrfm8oMFfufE9p3RFC9q9ZqGpsREX/Q7l+9jmmldZhGmo1OY1eDf1ylxs0wznhOeghW1g4fZWjmqQvxJiepUzquvPBYSJYKtgItMQY7QoTRbcq/7TsI7K3k+IfFpUg0qZ+8Vi+PeR6cKa0AIYpSFqMCFmytyWlHFzBgOmPZhn6sy3BUlQNWqnwfryo1qBvj3YKWUYpixo8OI2YGF6mIQG4EwwpqKgQcUzo8Q0qXv1bLsPa0BFlebh5zm4voLoA9GA6gUF87AGI18z8JPyBRpIxrxWbwyqE9i+IRFqChoEZrKsIGgCIcTXoNS604aTyg2kWZ2jGrD4RzdOmAC62cHGXQ5rMBT6Hoh9f5uSwtIQ2CcEPwiUZ6+tBA3qQgMPmaVMRzWAClh3sGXkaHNYLW05pEHgtgbdra4u1oAz3RCmle2NgZ0FWk/3Qk1oEKIkK8fWApcM0a0PVMlDwtUP9U41GAXGKDdJaiCTcyNx4VxkK6Ma0KkBDeiQekIDCjk31sv5anskNghg0RVCx12kRIKNdM5rQA8XEM4u16A0vo7uvIIGVVED7ZQGRa0SOYWENRhDeRvWDbgUy/sgQtR4DSqlpDWYijngtzSIWQvF2MQqpIHCHI4dUiE7gOSYRVyN1yCfsAbcDp+QBvH5blgDdizQWCHE4+GRopQ0MG4yjG47J2z3Z2jAp1GZ/gs4Ga8By27y3KEb9mXmB9ehonQ04A66VW1cVBSw41wNatDh7fW8aSiwxXMaFCBYjPhjLwz4OlqUoh8wv+3J4ZeeqQE79Qz8bDkmP+AOyDWJIybtm4Rap6IBJBlgzKUaQFy7CuyM0SCaIApdsb0R1ArtC4lqAOuSHpWZ8EKu/EUNjHBSI3HpLmjAjpKZ8DUkswZyJEikQvlBohrA6od7SYgP5/kBjJi6QfTMpLAbKe7u1gXO3ZArwy1qOE9MUgN2nwHWwDx2ztIA3BxCO9TTDY9dh44qlatrbQ4fLBQ64i51InZeKKWlgQI3YlQDdpCZn6UBDJBqUAKZg7U/zoiMcvWmP6iIW8LDfnfpakBfyq4XG5dpQK1i19a3/kEn/ipt4rkdrJuBaE4rNQ3kG+Gl3J31qHiOBvArcGeDu472Lka4u6MQ3v246JfglW0pNQ0kYaOe8wedgXyGBkxELwEs8CcHLx8SPksICkFnL25y0RTdNBUNNGZDvqcJt/baGRpwQ+zXe+zrnMe9ckIDrz+Wr2TKQzZBOSlFDbitOop3Sv9ujnTyLr71Nz+QxrF1NKFOJ1cuR94HJf0WP6avahAdRB5CgvvllWlwm6tWc+yjU3CNWs9EgeQlHQ0K4t2BRkP7/VkxMfqpraLQyOYNxdegUh8XDZmgFFu9QZ/vL/qpjp0pUjo7d0Ii9Of0KHklfF+4+aoGCv99mmyxSpA4jVq0fU5ryrwJJeMuz41UC7UPfXynMTLpO5QCs7nb8I56Bum5TK2ktZWgwKDnQmozPSuP6EcVucccvDKmw2rTNV2rxfzriDzWWGmLiymjBv8pUfwiBF8oJtKFNLXBTS5XadzRUShD9k3IqPnQOqnT835P4f8Fpv4DXO6vTK/vc7n7gdahh4ZpoyB9nVKrfk+kHvXzvXCzQmCMcbTgd7GdOfvN3nk9Ui0bBeOcf2T6NcxWywdVN10s+7D6v805ztZJqeP9Iqtblpr1US1zl9KLLmdpLtJQwVlYuppVVdVSAxmshxRekwwrXVd3s6R7ndmm6wT2E8FWdfVnayCtLEu3HxNW4XW5W7/tndls9jqb7T9tIoL1kewrEmVjW6ppfybuCxxrnWhwSPEFFzN7MrOqqf5JKzoSma1s1vxMrftEWJrEWXX9fZN0x85q7/55czVIvPOEWdm6G7b0h8cEnWG7Oaim/iZ5a0FV01xsieC8m17w1u3DWzLGOo8f7vZournRwspa74n0mirbR8vykxn9aXmpDCVn/a7qpD9V/7MlfT+pWX2djJ3p4jybfjqj6rq9WJ0tw9Z5fFdNT1Dd9jLkvZVV7R+/FHzWXlTwZTDV58/NsaPOccgZ4Uk3/RTZMg/+wHd6Vv+TtLFp8brTqQruojDVj93K2X6x8Xa/dsevB7kxyTnegponki+nt/EmjrNgKngx0tSzH8v1xtkel2L76rytFw+qCeP3FIAAsDF/fHIg4J92OFSSTOuW/fC+/Fyv3jZeBuziOPu31fpz+f5guw9YXCOiwCNbR0vd+viqM/0U9kvbD2mCEmSkZKjkJBTASsKPkp2FP39sSW6w//9Gcy6zxwddHBknh098JXGi91Vo1ld+nvT72L4d7BMyHFOHuMBOnPNn8wdfIf2F2frZMr8hg+WmFZvowt/8woXAMVsdbPMrOlhkT/jYxQjwT0B2/cOTO8R4JVTVrbOfdwmdMn4sW2fzuHh+Ijm0SQYc4F4Xky3z47Bb7f/x8QMkE9pvVo+7P8vF4bBYLP+QbGHjzP5R90cQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEGQM/kPw1+5Ok/QCoQAAAAASUVORK5CYII=",
+      "coupon_code": "MYNTRA20",
+      "time_stamp": "1664525125081",
+      "store_url": "https://www.myntra.com/"
+    },
+    {
+      "brand_img": "data:image/png;base64,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",
+      "coupon_code": "ADIDAS20",
+      "time_stamp": "1664525149780",
+      "store_url": "https://www.adidas.co.in/"
+    }
+  ],
+  "rec_prz_drop": [
+    {
+      "product_img": "https://m.media-amazon.com/images/I/419XQVMP38L.jpg",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "prize": "$789",
+      "current_prize": "$499",
+      "offer": "40% OFF",
+      "store_id": "",
+      "product_url": "https://www.amazon.in/American-Tourister-AMT-SCH-02/dp/B07CJCGM1M/ref=sr_1_3?keywords=bags%2Bfor%2Bmen&qid=1664528518&qu=eyJxc2MiOiI3LjYxIiwicXNhIjoiNy41MiIsInFzcCI6IjUuODcifQ%3D%3D&sprefix=bags%2Caps%2C382&sr=8-3&th=1",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU"
+    },
+    {
+      "product_img": "https://m.media-amazon.com/images/I/419XQVMP38L.jpg",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "prize": "$769",
+      "current_prize": "$469",
+      "offer": "60% OFF",
+      "store_id": "",
+      "product_url": "https://www.amazon.in/American-Tourister-AMT-SCH-02/dp/B07CJCGM1M/ref=sr_1_3?keywords=bags%2Bfor%2Bmen&qid=1664528518&qu=eyJxc2MiOiI3LjYxIiwicXNhIjoiNy41MiIsInFzcCI6IjUuODcifQ%3D%3D&sprefix=bags%2Caps%2C382&sr=8-3&th=1",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU"
+    },
+    {
+      "product_img": "https://m.media-amazon.com/images/I/419XQVMP38L.jpg",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "prize": "$759",
+      "current_prize": "$459",
+      "offer": "50% OFF",
+      "store_id": "",
+      "product_url": "https://www.amazon.in/American-Tourister-AMT-SCH-02/dp/B07CJCGM1M/ref=sr_1_3?keywords=bags%2Bfor%2Bmen&qid=1664528518&qu=eyJxc2MiOiI3LjYxIiwicXNhIjoiNy41MiIsInFzcCI6IjUuODcifQ%3D%3D&sprefix=bags%2Caps%2C382&sr=8-3&th=1",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU"
+    },
+    {
+      "product_img": "https://m.media-amazon.com/images/I/419XQVMP38L.jpg",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "prize": "$749",
+      "current_prize": "$449",
+      "offer": "45% OFF",
+      "store_id": "",
+      "product_url": "https://www.amazon.in/American-Tourister-AMT-SCH-02/dp/B07CJCGM1M/ref=sr_1_3?keywords=bags%2Bfor%2Bmen&qid=1664528518&qu=eyJxc2MiOiI3LjYxIiwicXNhIjoiNy41MiIsInFzcCI6IjUuODcifQ%3D%3D&sprefix=bags%2Caps%2C382&sr=8-3&th=1",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU"
+    }
+  ],
+  "deals": [
+    {
+      "product_img": "https://techstory.in/wp-content/uploads/2021/09/Flipkart-Big-Billion-Days-2021.jpg",
+      "store_id": "",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "prize": "$7809",
+      "current_prize": "$4989",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "deal_url": "https://www.amazon.in/s?i=apparel&bbn=29945467031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A29945467031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031%2Cp_n_feature_nineteen_browse-bin%3A11301357031&s=apparel&ds=v1%3A%2BhVZPdaILyY6IoUQroogq80u3hsE0%2FFUKKfM3PNzT2c&pd_rd_r=5728d656-3a3d-4b76-925f-d531c55a2a46&pd_rd_w=14SMp&pd_rd_wg=BTGxn&pf_rd_p=d689c8b8-cc71-4e0d-ba93-bd42786cf5c6&pf_rd_r=0ZJ0ABQ07MRPBSE32MFZ&qid=1668003576&rnid=11301356031&ref=pd_gw_unk"
+    },
+    {
+      "product_img": "https://techstory.in/wp-content/uploads/2021/09/Flipkart-Big-Billion-Days-2021.jpg",
+      "store_id": "",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "prize": "$7509",
+      "current_prize": "$4589",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "deal_url": "https://www.amazon.in/s?i=apparel&bbn=29945467031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A29945467031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031%2Cp_n_feature_nineteen_browse-bin%3A11301357031&s=apparel&ds=v1%3A%2BhVZPdaILyY6IoUQroogq80u3hsE0%2FFUKKfM3PNzT2c&pd_rd_r=5728d656-3a3d-4b76-925f-d531c55a2a46&pd_rd_w=14SMp&pd_rd_wg=BTGxn&pf_rd_p=d689c8b8-cc71-4e0d-ba93-bd42786cf5c6&pf_rd_r=0ZJ0ABQ07MRPBSE32MFZ&qid=1668003576&rnid=11301356031&ref=pd_gw_unk"
+    },
+    {
+      "product_img": "https://techstory.in/wp-content/uploads/2021/09/Flipkart-Big-Billion-Days-2021.jpg",
+      "store_id": "",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "prize": "$7849",
+      "current_prize": "$4949",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "deal_url": "https://www.amazon.in/s?i=apparel&bbn=29945467031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A29945467031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031%2Cp_n_feature_nineteen_browse-bin%3A11301357031&s=apparel&ds=v1%3A%2BhVZPdaILyY6IoUQroogq80u3hsE0%2FFUKKfM3PNzT2c&pd_rd_r=5728d656-3a3d-4b76-925f-d531c55a2a46&pd_rd_w=14SMp&pd_rd_wg=BTGxn&pf_rd_p=d689c8b8-cc71-4e0d-ba93-bd42786cf5c6&pf_rd_r=0ZJ0ABQ07MRPBSE32MFZ&qid=1668003576&rnid=11301356031&ref=pd_gw_unk"
+    },
+    {
+      "product_img": "https://techstory.in/wp-content/uploads/2021/09/Flipkart-Big-Billion-Days-2021.jpg",
+      "store_id": "",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "prize": "$7839",
+      "current_prize": "$4939",
+      "title": "American Tourister 32 Ltrs Black Casual Backpack (AMT FIZZ SCH BAG 02 - BLACK)",
+      "description": "Mi Step out 12 l Bagpack, Get 40% off",
+      "deal_url": "https://www.amazon.in/s?i=apparel&bbn=29945467031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A29945467031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031%2Cp_n_feature_nineteen_browse-bin%3A11301357031&s=apparel&ds=v1%3A%2BhVZPdaILyY6IoUQroogq80u3hsE0%2FFUKKfM3PNzT2c&pd_rd_r=5728d656-3a3d-4b76-925f-d531c55a2a46&pd_rd_w=14SMp&pd_rd_wg=BTGxn&pf_rd_p=d689c8b8-cc71-4e0d-ba93-bd42786cf5c6&pf_rd_r=0ZJ0ABQ07MRPBSE32MFZ&qid=1668003576&rnid=11301356031&ref=pd_gw_unk"
+    }
+  ],
+  "sale": [
+    {
+      "store_url": "https://www.flipkart.com/",
+      "img": "https://cdn.zeebiz.com/sites/default/files/2021/10/27/163971-flipkart-bannerflipkart-twitter.jpg",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "store_id": "",
+      "title": "Flipkart",
+      "description": "Save on iPad with an education discount + get $100 gift card"
+    },
+    {
+      "store_url": "https://www.myntra.com/",
+      "img": "https://cdn.zeebiz.com/sites/default/files/2021/10/27/163971-flipkart-bannerflipkart-twitter.jpg",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "store_id": "",
+      "title": "Myntra",
+      "description": "Save on iPad with an education discount + get $100 gift card"
+    },
+    {
+      "store_url": "https://www.amazon.in/",
+      "img": "https://cdn.zeebiz.com/sites/default/files/2021/10/27/163971-flipkart-bannerflipkart-twitter.jpg",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "store_id": "",
+      "title": "Amazon",
+      "description": "Save on iPad with an education discount + get $100 gift card"
+    },
+    {
+      "store_url": "https://www.adidas.co.in/",
+      "img": "https://cdn.zeebiz.com/sites/default/files/2021/10/27/163971-flipkart-bannerflipkart-twitter.jpg",
+      "store_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjgVxVFGECmTIX3F-KypmTkpiMcnnUuU_4Q&usqp=CAU",
+      "store_id": "",
+      "title": "Adidas",
+      "description": "Save on iPad with an education discount + get $100 gift card"
+    }
+  ],
+  "advertisements": [
+    {
+      "store_id": "",
+      "store_url": "https://www.amazon.in/",
+      "img": "https://assets.mspimages.in/wp-content/uploads/2019/09/Flipkart-Big-Billion-Day-Banner-01-1068x561.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.myntra.com/",
+      "img": "https://images.news18.com/ibnlive/uploads/2021/09/flipkart_big_billion_days_sale_september-16326377633x2.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.flipkart.com/",
+      "img": "https://www.dealsshutter.com/blog/wp-content/uploads/2017/09/flipkart-big-billion-days-sale-1.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.adidas.co.in/",
+      "img": "https://images.hindustantimes.com/img/2022/09/13/550x309/Screenshot_2022-09-13_143639_1663061822963_1663061878034_1663061878034.png"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.amazon.in/",
+      "img": "https://assets.mspimages.in/wp-content/uploads/2019/09/Flipkart-Big-Billion-Day-Banner-01-1068x561.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.myntra.com/",
+      "img": "https://images.news18.com/ibnlive/uploads/2021/09/flipkart_big_billion_days_sale_september-16326377633x2.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.flipkart.com/",
+      "img": "https://www.dealsshutter.com/blog/wp-content/uploads/2017/09/flipkart-big-billion-days-sale-1.jpg"
+    },
+    {
+      "store_id": "",
+      "store_url": "https://www.adidas.co.in/",
+      "img": "https://images.hindustantimes.com/img/2022/09/13/550x309/Screenshot_2022-09-13_143639_1663061822963_1663061878034_1663061878034.png"
+    }
+  ],
+  "all_stores": [
+    {
+      "img": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg",
+      "title": "Amazon",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234a"
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/en/7/7c/CRED_%28FinTech_company%29_logo.png",
+      "title": "Cred",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234b"
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/2077px-Original_Adidas_logo.svg.png",
+      "title": "Adidas",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234c"
+    },
+    {
+      "img": "data:image/png;base64,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",
+      "title": "1mg",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234d"
+    },
+    {
+      "img": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg",
+      "title": "Amazon",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234e"
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/en/7/7c/CRED_%28FinTech_company%29_logo.png",
+      "title": "Cred",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234f"
+    },
+    {
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/2077px-Original_Adidas_logo.svg.png",
+      "title": "Adidas",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234g"
+    },
+    {
+      "img": "data:image/png;base64,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",
+      "title": "1mg",
+      "descrp": "Extra 50% off sale with code: MIDSZN",
+      "coupons": 6,
+      "store_id": "1234h"
+    }
+  ],
+  "wish_list": [
+    {
+      "id": 1,
+      "type": "price_drop",
+      "fuid": "03cfd4e6",
+      "store_id": "paflidwzpp",
+      "pid": "252",
+      "title": "hello test",
+      "description": "hello test",
+      "img_url": "https://m.media-amazon.com/images/I/41VgtzxZOAL._UX575_.jpg",
+      "start_price": 200,
+      "last_notified_price": 102,
+      "min_drop": "10",
+      "product_url": "https://www.amazon.in/crocs-Sport-Sandal-Light-Women/dp/B07BV5BVJG",
+      "watch_for_days": 2,
+      "start_date": "2022-12-01T00:00:00.000Z",
+      "expiry_date": "2022-12-29T11:41:27.000Z",
+      "active": 1,
+      "store_name": "Flipkart",
+      "store_imgurl": null,
+      "prce_drp": "Any"
+    },
+    {
+      "id": 3,
+      "type": "wishlist",
+      "fuid": "03cfd4e6",
+      "store_id": "paflidwzpp",
+      "pid": "qwqw23",
+      "title": "hello",
+      "description": null,
+      "img_url": "https://m.media-amazon.com/images/I/41VgtzxZOAL._UX575_.jpg",
+      "start_price": 2323,
+      "last_notified_price": null,
+      "min_drop": "10",
+      "product_url": "https://www.amazon.in/crocs-Sport-Sandal-Light-Women/dp/B07BV5BVJG",
+      "watch_for_days": 45,
+      "start_date": "2022-12-22T16:50:55.000Z",
+      "expiry_date": "2022-12-29T11:41:32.000Z",
+      "active": 1,
+      "store_name": "Flipkart",
+      "store_imgurl": null,
+      "prce_drp": "10"
+    },
+    {
+      "id": 5,
+      "type": "wishlist",
+      "fuid": "03cfd4e6",
+      "store_id": "paflidwzpp",
+      "pid": "qwqw26",
+      "title": "hello",
+      "description": null,
+      "img_url": "https://m.media-amazon.com/images/I/41VgtzxZOAL._UX575_.jpg",
+      "start_price": 2323,
+      "last_notified_price": null,
+      "min_drop": "10",
+      "product_url": "",
+      "watch_for_days": 45,
+      "start_date": "2022-12-28T18:04:06.000Z",
+      "expiry_date": "2022-12-29T11:41:39.000Z",
+      "active": 1,
+      "store_name": "Flipkart",
+      "store_imgurl": null
+    },
+    {
+      "id": 8,
+      "type": "wishlist",
+      "fuid": "03cfd4e6",
+      "store_id": "whamalijoo",
+      "pid": "B07BV5BVJG",
+      "title": "helo",
+      "description": null,
+      "img_url": "https://m.media-amazon.com/images/I/41VgtzxZOAL._UX575_.jpg",
+      "start_price": 2323,
+      "last_notified_price": null,
+      "min_drop": "10",
+      "product_url": "",
+      "watch_for_days": 45,
+      "start_date": "2022-12-29T11:38:57.000Z",
+      "expiry_date": "2022-12-29T11:42:31.000Z",
+      "active": 1,
+      "store_name": "Amazon",
+      "store_imgurl": null
+    },
+    {
+      "id": 12,
+      "type": "wishlist",
+      "fuid": "03cfd4e6",
+      "store_id": "mpmynkgrjj",
+      "pid": "2048526",
+      "title": "helo",
+      "description": null,
+      "img_url": "https://m.media-amazon.com/images/I/41VgtzxZOAL._UX575_.jpg",
+      "start_price": 2323,
+      "last_notified_price": null,
+      "min_drop": null,
+      "product_url": "",
+      "watch_for_days": 45,
+      "start_date": "2022-12-29T15:05:13.000Z",
+      "expiry_date": "2023-02-21T00:00:00.000Z",
+      "active": 1,
+      "store_name": "Myntra",
+      "store_imgurl": null
+    },
+    {
+      "id": 16,
+      "type": "",
+      "fuid": "03cfd4e6",
+      "store_id": "",
+      "pid": "",
+      "title": "",
+      "description": null,
+      "img_url": null,
+      "start_price": 0,
+      "last_notified_price": null,
+      "min_drop": null,
+      "product_url": "",
+      "watch_for_days": 45,
+      "start_date": "2022-12-29T15:32:16.000Z",
+      "expiry_date": "2022-12-29T15:32:16.000Z",
+      "active": 1,
+      "store_name": null,
+      "store_imgurl": null
+    }
+  ],
+  "ind_str_detail": {
+    "1234a": {
+      "logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg",
+      "title": "Amazon",
+      "cpn_count": 12,
+      "store_url": "https://www.amazon.in/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234b": {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/7/7c/CRED_%28FinTech_company%29_logo.png",
+      "title": "Myntra",
+      "cpn_count": 12,
+      "store_url": "https://www.myntra.com/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234c": {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/2077px-Original_Adidas_logo.svg.png",
+      "title": "Go Daddy",
+      "cpn_count": 12,
+      "store_url": "https://www.godaddy.com/en-in/offers/godaddy?isc=gofigin01&countryview=1¤cyType=INR&cdtl=c_17587465578.g_141169705674.k_aud-750467811278:kwd-93455629.a_606438660853.d_c.ctv_g&bnb=b&gclid=Cj0KCQiAvqGcBhCJARIsAFQ5ke5aXqBSZ2FcBvXPyisM4Kqqn1BeWZhL_ZJcv8agp0tCbjsSVUcwQw0aAl6BEALw_wcB",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234d": {
+      "logo": "data:image/png;base64,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",
+      "title": "Flipkart",
+      "cpn_count": 12,
+      "store_url": "https://www.flipkart.com/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234e": {
+      "logo": "https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg",
+      "title": "Adidas",
+      "cpn_count": 12,
+      "store_url": "https://www.adidas.co.in/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234f": {
+      "logo": "https://upload.wikimedia.org/wikipedia/en/7/7c/CRED_%28FinTech_company%29_logo.png",
+      "title": "Puma",
+      "cpn_count": 12,
+      "store_url": "https://in.puma.com/in/en/outlet/shop-all-outlet?utm_medium=AFF&utm_source=OTH-CPO&utm_aud=MULT&utm_obj=OLC&utm_campaign=AFF_OTH_CPO_MULT_OLC_iCubesWire_616&gclid=Cj0KCQiAvqGcBhCJARIsAFQ5ke7Bix-D5IetKf8rgsgkFIlCY6oZXKV9LrHSwLFox5ZHdZ6diS_6UPMaAjNbEALw_wcB",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234g": {
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Original_Adidas_logo.svg/2077px-Original_Adidas_logo.svg.png",
+      "title": "Nike",
+      "cpn_count": 12,
+      "store_url": "https://www.nikevision.com/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    },
+    "1234h": {
+      "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX/b2EAAAD/cWP/c2W4UEbAVEn/cWKHOzNjKyZ2My2PPjZPIx7uaFvlZFfbX1O1T0WsS0HQWk/4bF6LPTUdDQsjDw3tZ1qVQTlEHhrGVktnLSfNWU4zFhOlSD8pEhA8GhcSCAedRDx9NzBUJCAtExFcKCNAHBhlLCYWCQg2FxUfDgy/R+/lAAAHtklEQVR4nO2daXuqPBCGMVFcCuLS4lbb2lNP6/v/f+Arm8wTEsWeMhWveb51ApKb7GEm9TyRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBIdFQelYv/q29WM3B/MGsig47mTznl1VXahHoC5r/Mf8C/c38nv98ZoZkNU0YUM9vIczgx78QP+4/n7n4o39I727fW1oFlCf2fYi7KtS+gZ9kdtz9CvEeoXw/6gryJUPTNhylSIdQnHlYT4KkL9x0wYMhViTUKzFR01UtcQBtUUpr6mbhlaUvwrCNWumjJR7myxE6quJWWlriB8qqa88lTTeoT6wZKyT3N4aTx8SwmntqQxC6E3nY8yzeHpw9zaT7MRWzMfpISL/AcWMCX4WOS/ukjf0NB2f5+rrykET5/q3JpesrMS7tKW6OcXaqgND8X9WWu13t85k6tGhIR0tNJv1gw+QRng/O+BprmaQo+nrznJSehbW5H5Gs4Q6qX9/geueU0uZ+ahFdHMwqB9hjAkCR90chRzsWVyEsKkGzodOmi7CdWCJOxoj7bgraYuQmhFaxg46KDtJtQ0IYT5320QQivqQZd5oCXlIvQ3xP6iodvasCK6CGkr6hh1lgzaTkK9JvadUiPy54C1r3EQQo6OfQss9smg7SSEVxIayxS+3YwzhNR8nIviSq+83UUI9uejWdM5KttS302oVhUgaigHbRehfjWAYIb0wllN7YT6k1jTARDalaOsiB2acVyxME2/zxBCK9okVizV06DtIFR0/MsWTPrZfGm/SehDvvM9F2oaFdXURUitWavzt9TGB2gnhPf9nmUb10KnBmslxAIPMiPMiyK+IdFKOLYYYQjPl/ouQhhbloWRziEOfNXURqj71Fi8bVjXF4O2nRCa8cT6MsJfJQRj/9TkgHt2hhCbXFA8CnbeuJb6VkIc3cuOHepuPmhbCfUHsf0px0jYPeUCtBHqPTG9kRnaF7H/p92E8CrKPgUX/WxLfQsh1KZ5mREY5DpTJyFuJJM5KDTPP1zVtEqIn2Po7APKJhu0kTDvNqlpT5eMtHKw9TX7wedJ+xRHrR9Kremb9mnKMjWp3r68f5D1StO/5Crc+lmSFKbdb09TZSZVNXnOFDCp6m/CKsK3XCwSiUQikUgkEonuRie3BWX+3aQYAf1oUmiT/B1GXQZFjDv7ZHPhXdkcCpvRju0DFN0g6jMS8n3O18RH7S4JNf3ay0nY59qn6ZpP5SJ85yHUsAF/f4R6htEG90WolI5H5lPviDAe9xYWz7q7IXTGzNwPocsLmpNw9GuE3rg/fx+CPgf1tB461Z8Tpa7SmyZnbecJq2sLXVfXrC0anZZeILwDXU/oK9+2pDuWhM+60qurKwmVnm2i3WKyiuGT2HFAXUXb7aQXur+U+UkNn/nsH9POjhZeMC6VXOxNTiPn1yguvijqcF56xfZD6zdrpTajzLv4MJwEySVh+dMNu3vPTvLmBiENBnrTlbCLfuav4RnhIuugUkg6wHiVz1jR79zzm1g9vejYDEHsHBLAatxep2cUo7+oXLKlPo9s60N1jvDZDJNNEX1ljcXYQphC8Gy5ZERK/jYIP6gjbJlPS1xhoh5x9Q/tlxDdBqFDtuJJdPKd8S8D3jahS6VjrD1mqv2EhZceuEzfF2HmBaQ2l69sK2Hmdqr/axnhOup155aGtZ70uiMcLr8Swkr88DBaraJKxWUb8S8RLuN0TaTN8fuQ23ECmPSm+i+Ydl524cxgZFvHXCA8FPkwEJ+K+3E/MiHEkWJcetDuIIFpv/QiYVgGCkFFHZ/yB/E+oekDvSIc6Hh6I4RL4iK8cNhp0YSGFymGqYEz/I0Qkk9gMAYQO4QphEY0CZ70AS/jRgipNzZdT0QOe2j4OhsU9NIbIVzVIKQ9S4hu4ktjRUXpb4SwThkahPTPvUFIg4PbS0jjmz4NQtpG20tIa6IZ3kRrcHsJoS/FiF+IaWsvIcSoRTBawKqqvYQQWvNICXHl32JCCK+EeFhYiLSX0Ig0WntFnImx+9ZiQvNsoW2QbOqHuD3casLqMW9fr5bduRtZH36L0DhP0qEbWeN/i9B2El1VN7JP8z3Ci6eHtp7QcZDZPRHWQWw5oblxlYsextR2Qk9bvsAt6WSg9YSeUuj3eBwfNF1ZNeoxxEKYuCn0ym++z4tAw9qRzc+7QcLEXcMLN1EUrcaz1BmDXsp2lJJPCd8NT4V/JUwfUAZXwLKjy1VLIYQ8+zjmCimvYSdWpWPzTC9YOnKepPTzOtbO6eK50l1qerIG65FmPyulg/xb2iMSQiX9YD4C8yc1P5S9CWLQ04cZnQThKId/lWd+t3Ae/NGoeynIeuLztzUz3RSivFM6Vl30K+crwh8nxJ2ozms3UNqfbYyp+K7FhHgWkUtsfI0Q1nDmYCzCBghr7NN8MQI2Qeh5lxxqxpzHezZCODvv1xaxjvaNEPqB5Z8GnDThnc40QnjUp/OaFfN8rSlC7ehRBzPONtgkoadUVPUwHo75J9yNESYztXA7KPuc5XzltXhB4ZB/nLCNp6vVZhwkDny/nZ2m5DccxiUSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJWqj/AX/GerQran0bAAAAAElFTkSuQmCC",
+      "title": "Pfizer",
+      "cpn_count": 12,
+      "store_url": "https://www.pfizer.com/",
+      "lsc_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ],
+      "ac_cpn": [
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        },
+        { "cpn_code": "E15RTU", "detail": "Extra 15% on all products" },
+        {
+          "cpn_code": "E15RTU1",
+          "detail": "Extra 15% on all productsExtra 15% on all products"
+        }
+      ]
+    }
+  },
+  "notif": []
+}
